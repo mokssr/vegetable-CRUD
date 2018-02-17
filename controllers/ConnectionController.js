@@ -1,7 +1,7 @@
 const ConnectionController = function(mongoose){
 
     //connect to db
-    mongoose.connect('mongodb://mokssr:sukma123@ds237808.mlab.com:37808/vegetables');
+    mongoose.connect('mongodb://<your_db_address>');
 
     //check established connection
     mongoose.connection.once('open',()=>{
